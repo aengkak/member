@@ -81,7 +81,7 @@
                           <div class="form-group">
                             <label class="control-label col-md-3">No Telp</label>
                             <div class="col-md-9">
-                              <input name="no_telp" placeholder="No Telp" class="form-control" type="text">
+                              <input name="no_telp" placeholder="No Telp" maxlength="12" onkeypress="return hanyaAngka(event)" class="form-control" type="text">
                             </div>
                           </div>
 

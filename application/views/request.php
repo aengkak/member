@@ -95,13 +95,13 @@
             			<div class="form-group">
                           <label class="control-label col-md-3">No Telp</label>
                           <div class="col-md-9">
-                            <input name="telp" placeholder="No Telp" class="form-control" type="text">
+                            <input name="telp" placeholder="No Telp" maxlength="12" onkeypress="return hanyaAngka(event)" class="form-control" type="text">
                           </div>
                         </div>
             			<div class="form-group">
                           <label class="control-label col-md-3">No Hp</label>
                           <div class="col-md-9">
-                            <input name="hp" placeholder="No Hp" class="form-control" type="text">
+                            <input name="hp" placeholder="No Hp" maxlength="12" onkeypress="return hanyaAngka(event)" class="form-control" type="text">
                           </div>
                         </div>
             			<div class="form-group">

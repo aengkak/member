@@ -398,9 +398,6 @@
   
 </script>
 
-
-
-
 <script type="text/javascript">
   $(document).ready(function(){
 
@@ -413,6 +410,16 @@
 </script>
 <script type="text/javascript">
 $( "#datepicker" ).bootstrapMaterialDatePicker({ weekStart : 0, time: false,animation:true});
-</script> 
+</script>
+
+<script>
+		function hanyaAngka(evt) {
+		  var charCode = (evt.which) ? evt.which : event.keyCode
+		   if (charCode > 31 && (charCode < 48 || charCode > 57))
+ 
+		    return false;
+		  return true;
+		}
+	</script> 
   </body>
 </html>

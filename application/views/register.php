@@ -23,6 +23,15 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('asset/css/plugins/bootstrap-material-datetimepicker.css');?>"/>
   <link href="<?php echo base_url('asset/css/style.css');?>" rel="stylesheet">
   <!-- end: Css -->
+  <script>
+		function hanyaAngka(evt) {
+		  var charCode = (evt.which) ? evt.which : event.keyCode
+		   if (charCode > 31 && (charCode < 48 || charCode > 57))
+ 
+		    return false;
+		  return true;
+		}
+	</script>
 
   <link rel="shortcut icon" href="asset/img/logomi.png">
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,12 +77,12 @@
                     <label>Alamat</label>
                   </div>
 				  <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <input type="text" class="form-text" name="telp" required>
+                    <input type="text" class="form-text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telp" required>
                     <span class="bar"></span>
                     <label>No Telp</label>
                   </div>
 				  <div class="form-group form-animate-text" style="margin-top:40px !important;">
-                    <input type="text" class="form-text" name="hp" required>
+                    <input type="text" class="form-text" maxlength="12" onkeypress="return hanyaAngka(event)" name="hp" required>
                     <span class="bar"></span>
                     <label>No Hp</label>
                   </div>
